@@ -1,0 +1,6 @@
+*************************************
+**  This file was created by TINA  **
+**    (c) 1996 DesignSoft, Inc.    **
+*************************************
+.LIB "TSPICE.LIB" ; for the examples only
+* Please use your own Spice libraries.

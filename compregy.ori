@@ -1,0 +1,255 @@
+; TINA Component Registry V2.0
+; Copyright (c) 1993-1999 DesignSoft, Inc.
+
+
+[!Basic]:{basic}
+Ground,2,TGnd,AnaComps.dll,0,basic/ground
+Voltage Source,14,TVSource,AnaComps.dll,19,sources/voltage_source
+Battery,67,TBattery,AnaComps.dll,127,sources/battery
+Voltage Generator,16,TVGenerator,AnaComps.dll,21,sources/voltage_generator
+Volt Meter,5,TVoltageMeter,AnaComps.dll,13,meters/voltage_meter
+Ampere Meter,6,TAmperMeter,AnaComps.dll,15,meters/ampere_meter
+Resistor,9,TResistor,AnaComps.dll,2,basic/resistor
+Potentiometer,36,TPotenciometer,AnaComps.dll,3,basic/potentiometer
+Capacitor,10,TCapacitor,AnaComps.dll,4,basic/capacitor
+Inductor,11,THndlNonLinMagneticComps,AnaComps.dll,6,basic/inductor
+Nonlinear Inductors,-300,THndlNonLinMagneticComps,AnaComps.dll,142,basic/nonlinear_inductor
+Coupled Inductors,12,TCoupledInds,AnaComps.dll,134,basic/coupled_inductor
+Transformers,-301,THndlNonLinMagneticComps,AnaComps.dll,80,basic/transformers
+Transmission Line,49,TLossLessLine,AnaComps.dll,88,basic/transmission_line
+Switch,52,TSwitch,AnaComps.dll,9,switches/switch
+Bulb,51,TBulb,Bulb.dll,101,basic/bulb
+Motor,50,TMotor,Motor.dll,100,basic/motor
+Thermistors,-302,THndlNonLinMagneticComps,AnaComps.dll,150,basic/thermistor
+Fuse,95,TFuse,AnaComps.dll,159,basic/fuse
+Impedance,158,TImp,AnaComps.dll,173,Basic/Impedance
+
+[!Switches]:{switches}
+Switch,52,TSwitch,AnaComps.dll,9,switches/switch
+Alternate Switch,59,TSwitch,AnaComp.dll,129,switches/alternate_switch
+High-Low Switch,10496,THLSwitch,AnaComp.dll,181
+Time-Controlled Switch,35,TTimeSwitch,AnaComps.dll,96,switches/time-ctld_switch
+Voltage-Controlled Switch,32,TVoltageSwitch,AnaComps.dll,10,switches/voltage-ctld_switch
+Changeover Switch,99,TSwitch,AnaComp.dll,162,switches/changeover_switch
+Open Push Button,125,TSwitch,AnaComp.dll,182,switches/push_button_open
+Closed Push Button,126,TSwitch,AnaComp.dll,183,switches/push_button_closed
+Changeover Push Button,128,TSwitch,AnaComp.dll,190,switches/push_button_openclosed
+Hex KeyPad,3000,TKeyPad,KeyPad.dll,89,switches/hex_keypad
+Hex Key,136,TKeyboard,AnaComps.dll,198,switches/hex_key
+Ascii Key,137,TKeyboard,AnaComps.dll,199,switches/ascii_key
+Single pole open relay,70,TRelay,AnaComps.dll,137,switches/single_pole_open_relay
+Single pole closed relay,71,TRelay,AnaComps.dll,138,switches/single_pole_closed_relay
+Single pole changeover relay,72,TRelay,AnaComps.dll,139,switches/single_pole_changeover_relay
+Double pole open relay,73,TRelay,AnaComps.dll,140,switches/double_pole_open_relay
+Double pole changeover relay,78,TRelay,AnaComps.dll,141,switches/double_pole_changeover_relay
+Relay Coils,-230,THandleBDY,AnaComps.dll,191
+Relay Switches,-240,THandleBDY,AnaComps.dll,192
+Connectors,-1340,TSpiceMacroCompHandler,[Connector],120,switches/connector
+
+[!Meters]:{meters}
+Voltage Pin,4,TVoltagePin,AnaComps.dll,11,meters/voltage_pin
+Volt Meter,5,TVoltageMeter,AnaComps.dll,13,meters/voltage_meter
+Open Circuit,33,TVoltageTap,AnaComps.dll,14,meters/open_circuit
+Volt Arrow,119,TVoltageTap,AnaComps.dll,177,meters/open_circuit
+Ampere Meter,6,TAmperMeter,AnaComps.dll,15,meters/ampere_meter
+Current Arrow,34,TCurrentArrow,AnaComps.dll,16,meters/current_arrow
+Power Meter,7,TPowerMeter,AnaComps.dll,17,meters/power_meter
+Ohmmeter,8,TImpedanceMeter,AnaComps.dll,18,meters/impedance_meter
+Impedance Meter,98,TImpedanceMeter,AnaComps.dll,161,meters/impedance_meter
+Speaker,60,TSpeaker,AnaComps.dll,92,basic/speaker
+Logic Indicator,1120,TLogicIndicator,DigComps.dll,113,meters/logic_indicator
+Logic Indicator2,1121,TLogicIndicator,DigComps.dll,203,meters/logic_indicator2
+Oscilloscope,61,TOscilloscope,AnaComps.dll,123,meters/oscilloscope
+Signal analyser,62,TSignalAnalyser,AnaComps.dll,124,meters/signal_analyser
+Network analyser,100,TNetworkAnalyser,AnaComps.dll,175,meters/network_analyser
+Multimeter,63,TMultimeter,AnaComps.dll,122,meters/multimeter
+7 Segment Display,3001,TDisplay,Display.dll,90,meters/7_segment_display
+Hex Display,138,THexDisplay,Display.dll,200,meters/hex_display
+Ascii Display,139,TAsciiDisplay,Display.dll,201,meters/ascii_display
+Traffic Light,135,TStopLight,AnaComps.dll,197,basic/stoplight
+
+[!Sources]:{sources}
+Voltage Source,14,TVSource,AnaComps.dll,19,sources/voltage_source
+Battery,67,TBattery,AnaComps.dll,127,sources/battery
+Current Source,13,TCSource,AnaComps.dll,20,sources/current_source
+Voltage Generator,16,TVGenerator,AnaComps.dll,21,sources/voltage_generator
+Current Generator,15,TCGenerator,AnaComps.dll,22,sources/current_generator
+I( U ),18,TIU,AnaComps.dll,23,sources/i_u
+U( U ),20,TUU,AnaComps.dll,24,sources/u_u
+U( I ),19,TUI,AnaComps.dll,25,sources/u_i
+I( I ),17,TII,AnaComps.dll,26,sources/i_i
+Pulse Source,1004,TDPulseGen,DigComps.dll,27,sources/pulse_source
+Clock,1022,TClock,DigComps.dll,28,sources/clock
+Pulse Source2,1200,TDPulseGen,DigComps.dll,112,sources/pulse_source2
+Clock2,1201,TClock,DigComps.dll,111,sources/clock2
+Digital Voltage Source,1119,TDVS,DigComps.dll,97,sources/digital_voltage_source
+Digital High Source,10498,TDHS,DigComps.dll,109,sources/digital_high_source
+Digital Low Source,10497,TDLS,DigComps.dll,110,sources/digital_low_source
+Data Generator 4-bit,10494,TDLS,DigComps.dll,189,sources/data_generator
+Data Generator 8-bit,10495,TDLS,DigComps.dll,193,sources/data_generator
+
+[!Semiconductors]:{semiconductors/index}
+Ideal Op. Amplifier,86,TIdealOpamp,AnaComps.dll,29,semiconductors/ideal_op_amplifier
+Operational Amplifier,85,TOpamp,AnaComps.dll,30,semiconductors/operational_amplifier
+Diode,23,TDiode,[D],31,semiconductors/diode
+Zener Diode,43,TZener,[DZ],32,semiconductors/zener_diode
+LED,44,TLED,[DL],33,semiconductors/led
+Varicap Diode,53,TVaricap,[DV],114,semiconductors/varicap_diode
+Schottky Diode,64,TSchottky,[DS],115,semiconductors/schottky_diode
+NPN Bipolar Transistor,87,TNPN,[NPN],34,semiconductors/npn_bipolar_transistor
+PNP Bipolar Transistor,88,TPNP,[PNP],35,semiconductors/pnp_bipolar_transistor
+NMOS Enhancement-type,89,TNMOSInc,[NMOSE],36,semiconductors/nmos_enhancement-type
+PMOS Enhancement-type,90,TPMOSInc,[PMOSE],37,semiconductors/pmos_enhancement-type
+NMOS Depletion-type,91,TNMOSDep,[NMOSD],38,semiconductors/nmos_depletion-type
+PMOS Depletion-type,92,TPMOSDep,[PMOSD],39,semiconductors/pmos_depletion-type
+4 terminal MOSFETs,-190,THandleBDY,AnaComps.dll,184
+Junction FET N-channel,93,TJFETN,[NJF],40,semiconductors/junction_fet_n-channel
+Junction FET P-channel,94,TJFETP,[PJF],41,semiconductors/junction_fet_p-channel
+Thyristor,40,TThyristor,AnaComps.dll,42,semiconductors/thyristor
+Diac,42,TDiac,AnaComps.dll,43,semiconductors/diac
+Triac,41,TTriac,AnaComps.dll,44,semiconductors/triac
+Bridge Rectifier,68,TGraetz,AnaComps.dll,128,semiconductors/graetz_bridge_rectifier
+Diode Arrays,-1300,TSpiceMacroCompHandler,[DiodeArrays],160,semiconductors/diode_arrays
+
+[!Optoelectronics]:{optoelectronics}
+Photoresistor,400,TDummy,AnaComps.dll,151,optoelectronics/photoresistor
+LED,44,TLED,[DL],33,semiconductors/led
+Photodiode,401,TDummy,AnaComps.dll,153,optoelectronics/photodiode
+2 Terminal Phototransistor,402,TDummy,AnaComps.dll,202,optoelectronics/phototran1
+3 Terminal Phototransistor,403,TDummy,AnaComps.dll,154,optoelectronics/phototran2
+Solar Cell,404,TDummy,AnaComps.dll,152,optoelectronics/solarcell
+Optocouplers,-1170,TSpiceMacroCompHandler,[OptoCoupler],155,manufacturers_models/optocouplers
+
+[!Spice Macros]:{manufacturers_models/index}
+Operational Amplifiers,-1100,TSpiceMacroCompHandler,[OpAmp],119,manufacturers_models/operational_amplifiers
+Instrumentation Amplifiers,-1110,TSpiceMacroCompHandler,[InstAmp],132,manufacturers_models/instrumentation_amplifiers
+Comparators,-1120,TSpiceMacroCompHandler,[Comparator],130,manufacturers_models/comparators
+Voltage References,-1130,TSpiceMacroCompHandler,[Ref],133,manufacturers_models/voltage_references
+Buffers,-1140,TSpiceMacroCompHandler,[Buffer],131,manufacturers_models/buffers
+Other Components,-1150,TSpiceMacroCompHandler,[Misc],120,manufacturers_models/other_components
+Voltage Regulators,-1200,TSpiceMacroCompHandler,[VoltageReg],158,manufacturers_models/voltage_regulators
+Diodes,-1210,TSpiceMacroCompHandler,[D],31,manufacturers_models/diodes
+NPN Bipolar Transistors,-1220,TSpiceMacroCompHandler,[NPN],34,manufacturers_models/npn_bipolar_transistors
+PNP Bipolar Transistors,-1230,TSpiceMacroCompHandler,[PNP],35,manufacturers_models/pnp_bipolar_transistors
+NPN Darlington Transistors,-1180,TSpiceMacroCompHandler,[NDarlington],156,manufacturers_models/npn_darlington_transistors
+PNP Darlington Transistors,-1190,TSpiceMacroCompHandler,[PDarlington],157,manufacturers_models/pnp_darlington_transistors
+N-channel MOS,-1240,TSpiceMacroCompHandler,[NMOS],36,manufacturers_models/n-channel_mos
+P-channel MOS,-1250,TSpiceMacroCompHandler,[PMOS],37,manufacturers_models/p-channel_mos
+N-channel JFET,-1260,TSpiceMacroCompHandler,[NJF],40,manufacturers_models/junction_fet_n-channel
+P-channel JFET,-1270,TSpiceMacroCompHandler,[PJF],41,manufacturers_models/junction_fet_p-channel
+IGBT,-1420,TSpiceMacroCompHandler,[IGBT],204,manufacturers_models/igbt
+Thyristors,-1280,TSpiceMacroCompHandler,[Thyristor],42,manufacturers_models/thyristors
+
+[!Gates]:{gates}
+Buffer,1117,TBuffer,DigComps.dll,45,gates/buffer
+3-state Buffer,2185,TTriStateBuffer,DigComps.dll,46,gates/3-state_buffer
+Inverter,1001,TNotGate,DigComps.dll,47,gates/nor_gate_inverter
+Schmidt Inverter,1006,TSchNotGate,DigComps.dll,48,gates/schmidt_inverter
+And2 gate,1002,TAnd2Gate,DigComps.dll,49,gates/and2_gate
+And3 gate,1010,TAnd3Gate,DigComps.dll,50,gates/and3_gate
+And4 gate,2285,TAnd4Gate,DigComps.dll,51,gates/and4_gate
+Or2 gate,1003,TOr2Gate,DigComps.dll,52,gates/or2_gate
+Or3 gate,1012,TOr3Gate,DigComps.dll,53,gates/or3_gate
+Or4 gate,2293,TOr4Gate,DigComps.dll,54,gates/or4_gate
+Nand2 gate,1005,TNAnd2Gate,DigComps.dll,55,gates/nand2_gate
+Nand3 gate,1011,TNAnd3Gate,DigComps.dll,56,gates/nand3_gate
+Nand4 gate,1016,TNAnd4Gate,DigComps.dll,57,gates/nand4_gate
+Nor2 gate,1009,TNOr2Gate,DigComps.dll,58,gates/nor2_gate
+Nor3 gate,1013,TNOr3Gate,DigComps.dll,59,gates/nor3_gate
+Nor4 gate,2305,TNOr4Gate,DigComps.dll,60,gates/nor4_gate
+Xor gate,1017,TXOrGate,DigComps.dll,61,gates/xor_gate
+Pull up resistor,10499,TResistor,DigComps.dll,95,gates/pull_up_resistor
+
+[!Flip-flops]:{flip-flops}
+Latch,1007,TDBuffer,DigComps.dll,62,flip-flops/latch
+SR FlipFlop,1008,TSRFlipFlop,DigComps.dll,63,flip-flops/sr_flipflop
+JK FlipFlop,1014,TJKFlipFlop,DigComps.dll,64,flip-flops/jk_flipflop
+JK FlipFlop with preset,1100,TJKFlipFlop,DigComps.dll,106,flip-flops/jk_flipflop_with_preset
+JK FlipFlop with clear,1101,TJKFlipFlop,DigComps.dll,107,flip-flops/jk_flipflop_with_clear
+D FlipFlop,1015,TDFlipFlop,DigComps.dll,65,flip-flops/d_flipflop
+
+[!Logic ICs]:{logic_ics}
+Gates,-10000,THandleICs,TTL.dll,70,logic_ics/gates
+Flip-flops & Latches,-10500,THandleICs,TTL.dll,71,logic_ics/flip-flops_latches
+Data selectors/multiplexers,-11000,THandleICs,TTL.dll,72,logic_ics/data_selectors_multiplexers
+Decoders/demultiplexers,-11500,THandleICs,TTL.dll,73,logic_ics/decoders_demultiplexers
+Buffers & Drivers,-12000,THandleICs,TTL.dll,75,logic_ics/buffers_drivers
+Counters,-12500,THandleICs,TTL.dll,76,logic_ics/counters
+Registers,-13000,THandleICs,TTL.dll,77,logic_ics/registers
+Arithmetic circuits,-13500,THandleICs,TTL.dll,78,logic_ics/aritmetic_circuits
+Logic comparators,-14000,THandleICs,TTL.dll,79,logic_ics/logic_comparators
+Memory,-14500,THandleICs,TTL.dll,108,logic_ics/memory
+Digital Multivibrators,-15000,THandleICs,TTL.dll,176,logic_ics/digital_multivibrators
+
+[!AD/DA-555]:{ad_da-555}
+ADC,-1400,TADDAHandler,Mixed.dll,66,ad_da-555/adc
+DAC,-1405,TADDAHandler,Mixed.dll,67,ad_da-555/dac
+555 Timer,45,T555,Mixed.dll,69,ad_da-555/555_timer
+
+[!RF]
+Microstrip,250,TRFComps,AnaComps.dll,170,rf/microstrip
+Microstrip Shorted,251,TRFComps,AnaComps.dll,172,rf/microstrip_shorted
+Microstrip Open Ended,252,TRFComps,AnaComps.dll,171,rf/microstrip_open_ended
+NPN RF Bipolar Transistors,-1290,TSParam2PCompHandler,[NPN],34,rf/npn_rf_bipolar_transistors
+PNP RF Bipolar Transistors,-1310,TSParam2PCompHandler,[PNP],35,rf/pnp_rf_bipolar_transistors
+RF Capacitors,-1320,TSParam2PCompHandler,[C],4,rf/rf_capacitors
+RF Inductors 2P,-1330,TSParam2PCompHandler,[L],6,rf/rf_inductors_2p
+RF Inductors 1P,-1350,TSParam1PCompHandler,[L],6,rf/rf_inductors_1p
+GaAsFET,-1360,TSparam2PCompHandler,[GaAsFET],36,rf/gaasfet
+Pin Diode 1P,-1370,TSparam1PCompHandler,[DP],31,rf/pin_diode_1p
+Pin Diode 2P,-1380,TSparam2PCompHandler,[DP],31,rf/pin_diode_2p
+Switching Diode,-1390,TSparam1PCompHandler,[DSW],31,rf/switching_diode
+RF Varicap Diode,-1400,TSparam1PCompHandler,[DV],114,rf/rf_varicap_diode
+
+[!Analog Control]:{analog_control}
+Lag blocks,-500,THandleACtrls,TTL.dll,82,analog_control/lag_blocks
+Second order lag blocks,-560,THandleACtrls,TTL.dll,85,analog_control/second_order_lag_blocks
+Controllers,-520,THandleACtrls,TTL.dll,83,analog_control/controllers
+Dead time blocks,-540,THandleACtrls,TTL.dll,84,analog_control/dead_time_blocks
+Add Sub Mult Div,-580,THandleACtrls,TTL.dll,86,analog_control/add_sub_mult_div
+Nonlinear blocks,-600,THandleACtrls,TTL.dll,87,analog_control/nonlinear_blocks
+VCO,121,TVCO,Mixed.dll,185,ad_da-555/Voltage_controlled_oscillator
+SVCO,122,TVCO,Mixed.dll,186,ad_da-555/Sine_wave_output_voltage_controlled_oscillator
+TVCO,123,TVCO,Mixed.dll,187,ad_da-555/Triangle_wave_output_voltage_controlled_oscillator
+SQVCO,124,TVCO,Mixed.dll,188,ad_da-555/Square_wave_output_voltage_controlled_oscillator
+
+[!Special]:{special}
+Jumper,3,TJumper,AnaComps.dll,1,special/jumper
+Macro Pin,58,TMacroPin,AnaComps.dll,121,special/macro_pin
+Real time measurement point,39,TTestPoint,AnaComps.dll,12,special/real_time_measurement_point
+Inductive Coupling,65,TInductiveCoupling,AnaComps.dll,125,special/inductive_coupling
+Magnetic core,66,TMagneticCore,AnaComps.dll,126,special/magnetic_core
+Variable Capacitor,79,TVarCap,AnaComps.dll,143,special/variable_capacitor
+Variable Inductor,80,TVarInd,AnaComps.dll,144,special/variable_inductor
+Charged Capacitor,37,TEnergyCap,AnaComps.dll,5,special/charged_capacitor
+Energy Storing Inductor,38,TEnergyInd,AnaComps.dll,7,special/energy_storing_inductor
+Initial Condition1,81,TInitCond1,AnaComps.dll,146,special/initial_condition1
+Initial Condition2,82,TInitCond2,AnaComps.dll,147,special/initial_condition2
+Nodeset1,83,TNodeset1,AnaComps.dll,148,special/nodeset1
+Nodeset2,84,TNodeset2,AnaComps.dll,149,special/nodeset2
+Vacuum Tubes,-1160,TSpiceMacroCompHandler,[VacuumTubes],145,special/vacuum_tubes
+Stepper Motor,129,TStepperMotor,AnaComps.dll,194,special/steppermotor
+Quartz Crystal,-1410,TSpiceMacroCompHandler,[CRYSTAL],195,special/crystals
+Z matrix,151,TZM,AnaComps.dll,163,special/z_matrix
+G matrix,152,TGM,AnaComps.dll,164,special/g_matrix
+H matrix,153,THM,AnaComps.dll,165,special/h_matrix
+K matrix,154,TKM,AnaComps.dll,166,special/k_matrix
+A matrix,155,TAM,AnaComps.dll,167,special/a_matrix
+B matrix,156,TBM,AnaComps.dll,168,special/b_matrix
+S matrix,157,TSM,AnaComps.dll,169,special/s_matrix
+Two-pole with S parameter,159,TStwop,AnaComps.dll,174,Special/Two-pole_with_S-parameter
+Bridge,-200,THandleBDY,AnaComps.dll,179
+Star,-210,THandleBDY,AnaComps.dll,180
+Y,-220,THandleBDY,AnaComps.dll,178
+
+[$Train/Exam]:{train_exam}
+Jumper,3,TJumper,AnaComps.dll,1,special/jumper
+Voltage Pin,4,TVoltagePin,AnaComps.dll,11,meters/voltage_pin
+Real time measurement point,39,TTestPoint,AnaComps.dll,12,special/real_time_measurement_point
+Volt Meter,5,TVoltageMeter,AnaComps.dll,13,meters/voltage_meter
+Open Circuit,33,TVoltageTap,AnaComps.dll,14,meters/open_circuit
+Amper Meter,6,TAmperMeter,AnaComps.dll,15,meters/ampere_meter
+Current Arrow,34,TCurrentArrow,AnaComps.dll,16,meters/current_arrow
+Power Meter,7,TPowerMeter,AnaComps.dll,17,meters/power_meter
+Ohmmeter,8,TImpedanceMeter,AnaComps.dll,18,meters/impedance_meter
+Impedance Meter,98,TImpedanceMeter,AnaComps.dll,161,meters/impedance_meter

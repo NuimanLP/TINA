@@ -1,0 +1,13 @@
+You have successfully installed TINA on the file server. To finish the network 
+installation, you must run the setup program on each workstation (client) where 
+you want to use Tina. Select the Run command from the Windows Start menu, enter 
+the command U:\Tina Pro\NWSetup\NSETUP and follow the instructions. Note that 
+Tina Pro is the main program directory holding Tina Pro on the server.
+
+Notes: 
+
+1) Before running NSETUP, make sure that in each client a mapped drive has been 
+set to the network drive containing the Tina program directory (e.g., U:).
+
+2) This special network version of TINA will only run if installed on a file server.
+It will run on workstations where the setup with the NSETUP program has been already done.
